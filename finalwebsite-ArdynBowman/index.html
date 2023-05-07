@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Bootstrap CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome CDN CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
+      integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FancyApp CSS CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!--Google Icons CDNS-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!--AOS CSS CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--Local CSS-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Baroque Minded</title>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--Google Icons-->
+      <div class="container text-center top-logo">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <span class="material-symbols-outlined">
+              draw
+            </span>
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </div>
+          <div class="col-12 col-md-6" id="title">Baroque Minded</div>
+        </div>
+      </div>
+      <!--End Google Icons-->
+
+      <!--Top Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#">Navbar</a>-->
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://ileqlm.csb.app"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ileqlm.csb.app/form.html"
+                  >Member Sign-up</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ileqlm.csb.app/gallery.html"
+                  >Gallery</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="https://ileqlm.csb.app"
+                      >Home</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--End Top Navbar-->
+    </header>
+    <!--HEADER-->
+
+    <!--MAIN-->
+    <main>
+      <!--Carousel-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/carousel/caro-1.jpg"
+              class="d-block w-100"
+              alt="marble bust of women"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Diana</h5>
+              <p>
+                Marble bust created by Coustou, Guillaume in the 1700's
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/carousel/caro-2.jpg"
+              class="d-block w-100"
+              alt="painting in church"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Religious Painting</h5>
+              <p>
+                Housed in the Church of Saints Bartholomew and Cajetan in
+                Bologna, Italy.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/carousel/caro-3.jpg"
+              class="d-block w-100"
+              alt="women painting"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Creative Process</h5>
+              <p>
+                Be your own muse!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="ratio ratio-16x9 carousel-alternate">
+        <iframe
+          src="https://www.youtube.com/embed/v7Xl6a4J7Wk"
+          title="painting documentary"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!--End Carosel-->
+
+      <!--font awesome section-->
+      <div class="container-fluid text-center fa-row">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <i class="fa-solid fa-palette fa-row-icon"></i> <br />
+            <a href="https://ileqlm.csb.app/gallery.html">Gallery</a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <i class="fa-solid fa-paintbrush fa-row-icon"></i> <br />
+            <a href="https://artmakespeople.com/best-online-art-supply-stores/"
+              >Art Supplies</a
+            >
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <i class="fa-solid fa-earth-europe fa-row-icon"></i> <br />
+            <a
+              href="https://www.jacadatravel.com/all/travel-guides/best-travel-destinations-for-art-lovers/"
+              >Travel</a
+            >
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <i class="fa-solid fa-feather-pointed fa-row-icon"></i><br />
+            <a href="https://www.metmuseum.org/toah">Art History</a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <i class="fa-solid fa-landmark fa-row-icon"></i> <br />
+            <a href="https://artincontext.org/famous-art-museums/">Museums</a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+            <i class="fa-solid fa-trowel fa-row-icon"></i><br />
+            <a href="https://www.jstor.org/journal/visuartsrese">Research</a>
+          </div>
+        </div>
+      </div>
+      <!--end font awesome section-->
+
+      <!--BEGIN first paragraph description-->
+      <div class="container first-paragraph-div google-font" data-aos="fade-up">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/general/section-1.jpg"
+              alt="placeholder"
+              class="img-responsive first-paragraph-img"
+            />
+            <h2 id="partitle">What Is Fine Art?</h2>
+            <p>
+              If you are going by the European-centric definition, the idea of
+              fine art is art that is created with no real function. Paintings,
+              mosaics, and sculptures can be some examples of art created with
+              only artistic or aesthetic ambitions in mind. Art for the sake of
+              art.
+            </p>
+            <p>
+              We have had this idea of art for art’s sake for a very long time.
+              In some definitions music and performance are also included in the
+              idea of “fine art”, which shows how embedded and essential fine
+              art is to the fabric of our lives. Yet, this idea of fine art
+              really reached a fever pitch during the Italian Renaissance. A
+              very important moment in art history, it was a time when a lot of
+              creative theories were really starting to come into focus and when
+              “fine art” really got defined. This is the main reason fine art
+              usually refers to works from this period and onward.
+            </p>
+            <p>
+              It is obvious in hindsight why the idea of fine art would have
+              gained traction, recognition, and respect in 15th-century Italy.
+              All of Europe was coming off the heels of the black death during
+              this time. An unimaginable pandemic that wiped out up to half of
+              the European population, which, rightfully so, felt near
+              apocalyptic to those living through it. These circumstances
+              created a change in not only how the public viewed fine art but
+              also the fine art that was being created. All this death made it
+              so a lot of the art being created was centered on life and
+              expressing emotions. This aesthetic artwork, which maybe had no
+              practical function, served the purpose of an outlet for expressing
+              the value of the human experience.
+            </p>
+            <p>
+              To this day fine art serves a similar important emotional function
+              for many people. Most people probably have a piece of art that has
+              affected them in some way, even if it is as simple as being their
+              favorite.
+            </p>
+            <p id="call-action">
+              If you share this affinity for fine art consider clicking the form
+              button below and joining our community of art enthusiasts!
+            </p>
+
+            <div>
+              <a
+                href="form.html"
+                class="btn btn-outline-primary btn-first-paragraph"
+                >FORM</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END first paragraph description-->
+      <!--BEGIN members section-->
+      <div class="container members text-center">
+        <div class="row">
+          <div class="col">
+            <img
+              src="/images/members/quote-1.jpg"
+              alt="placeholder"
+              class="cropped"
+            />
+            <br />
+            <blockquote>
+              If you hear a voice within you say, ‘You cannot paint,’ then by
+              all means paint, and that voice will be silenced.
+              <cite>Vincent Van Gogh</cite>
+            </blockquote>
+          </div>
+          <div class="col">
+            <img
+              src="/images/members/quote-2.jpg"
+              alt="placeholder"
+              class="cropped"
+            />
+            <br />
+            <blockquote>
+              I found I could say things with color and shapes that I couldn’t
+              say any other way – things I had no words for.
+              <cite>Georgia O’Keeffe</cite>
+            </blockquote>
+          </div>
+          <div class="col">
+            <img
+              src="/images/members/quote-3.jpg"
+              alt="placeholder"
+              class="cropped"
+            />
+            <br />
+            <blockquote>
+              Don’t think. Thinking is the enemy of creativity. It’s
+              self-conscious, and anything self-conscious is lousy. You can’t
+              try to do things. You simply must do things.
+              <cite>Ray Bradbury</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <!--END members section-->
+    </main>
+    <!--MAIN-->
+
+    <!--FOOTER-->
+    <footer>
+      <div class="container-fluid text-center footer-row" id="footerinfo">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <a href="https://artsandculture.google.com/">History Resource</a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <a
+              href="https://youtube.com/playlist?list=PLEtDgaOoHOc6hMnqcn1y-J4lEfc9J3Fbd"
+              >Video Resource</a
+            >
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <a href="https://www.createmagazine.com/">Magazine</a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <a href="https://www.domestika.org/en/courses/area/30-fine-arts"
+              >Online Courses</a
+            >
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <a
+              href="https://guides.library.illinois.edu/rickerartjournals/completelistartjrn"
+              >Journal Resource</a
+            >
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <a href="https://artistcommunities.org/directory/residencies"
+              >Residency Resource</a
+            >
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook fa-social-media"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram fa-social-media"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter fa-social-media"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--FOOTER-->
+
+    <section>
+      <!--JS Section-->
+      <!--JQuery CDN JS-->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+      <!--Bootstrap JS CDN-->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+
+      <!--FancyApp JS CDN-->
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+      <!--AOS JS CDN-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <!--Isotope Filtering JS CDN-->
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+      <!--Local JS-->
+      <script src="/js/scripts.js"></script>
+      <!--JS Section-->
+    </section>
+  </body>
+</html>
